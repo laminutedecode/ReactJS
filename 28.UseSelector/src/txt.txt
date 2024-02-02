@@ -1,0 +1,5 @@
+1) Dans index.js
+2)Créer CounterSlice
+3) Créer store
+4) créer Counter
+5) afficher dans le app

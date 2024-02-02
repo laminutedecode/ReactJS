@@ -1,0 +1,2 @@
+1) npm install all @reduxjs/toolkit react-redux
+2) Crée un fichier /src/store.js

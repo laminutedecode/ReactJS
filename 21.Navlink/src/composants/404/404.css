@@ -1,0 +1,8 @@
+.p404 {
+  position: absolute; 
+  top:50%; 
+  left:50%; 
+  transform: translate(-50%,-50%);
+  color:#f1f1f1;
+  font-size: 50px;
+}

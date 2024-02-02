@@ -1,0 +1,46 @@
+.carte {
+  position: absolute; 
+   top:50%; 
+   left:50%; 
+   transform: translate(-50%,-50%);
+   max-width: 500px;
+   min-width: 400px;
+   padding: 2rem;
+   box-shadow: 0 5px 5px 0 rgba(0,0,0,.3);
+   background: #f1f1f1;
+}
+
+.carte img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.carte h1 {
+  text-transform: uppercase;
+  color: crimson;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.carte h2 {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.job {
+  font-weight: 200;
+}
+
+.carte p {
+  margin: 1rem 0;
+}
+
+.carte p span {
+  font-weight: bold;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}

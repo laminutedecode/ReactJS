@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 2rem;
+  margin: 5rem 0;
+}
+
+.container h1, .container .txt {
+  text-align: center;
+
+}
+

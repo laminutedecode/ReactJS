@@ -1,0 +1,27 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1;
+  color: #333;
+  transition: background 0.2s ease-in-out;
+}
+
+.dark-body {
+  background: #333;
+  color: #f1f1f1;
+}
+
+.dark-body h1 {
+  color: crimson;
+}
+
+.dark-body button {
+  background: #f1f1f1;
+  color: #333;
+}
