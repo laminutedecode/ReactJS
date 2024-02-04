@@ -8,7 +8,7 @@ interpolation des variables
 css et module (propriete en camlKase)
 evenement onClick, onChange
 condition et ternaire
-utiliser des fonction commemap et filter
+utiliser des fonction comme map et filter
 
 
 */
