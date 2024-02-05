@@ -1,27 +1,34 @@
 import './App.css';
-
-
-// 8) je limporte dans app
-import useSize from './useSize'
+import { useIncrement } from './hooks/useIncrement';
+import useSize from './hooks/useSize'
+import MyComposant from './components/MyComposant'
 
 function App() {
-// pour creer un hook crée un fichier avec "use" au début: ex useSize
+  
+  const {count, increment, decrement} = useIncrement({
+    initial: 0,
+    max: 10,
+    min: 0
+  })
 
-// 9) je l'utilise comme un autre hook
-const widthSize = useSize();
-// console.log(widthSize);
-
-if(widthSize > 880){
+  const widthSize = useSize();
+  if(widthSize > 880){  
   console.log("Descktop");
-}else {
-  console.log('Mobil and Tablet')
+  }else {
+    console.log('Mobil and Tablet')
 }
 
 
   return (
     <div className="App">
-
+     <div>
+      <p>Compteur: {count}</p>
+      <button onClick={increment}>+</button>
+      <button  onClick={decrement}>-</button>
+      </div>
      <p>La width du navigateur est de :  {widthSize}px</p>
+      <MyComposant />
+     
     </div>
   );
 
