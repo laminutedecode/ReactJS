@@ -20,8 +20,8 @@ function App() {
     </div>
   );
 }
-// Dans cet exemple, ont rend un bouton (CounterButton) qui incrémente un compteur à chaque clic. Le bouton reçoit une fonction onClick en tant que prop. Si nous n'utilisions pas useCallback, une nouvelle instance de la fonction serait créée à chaque rendu de ParentComponent, même si elle n'a pas changé. Cela pourrait entraîner des rendus inutiles du composant CounterButton.
+// Dans cet exemple, ont rend un bouton qui incrémente un compteur à chaque clic. Le bouton reçoit une fonction onClick en tant que prop. Si nous n'utilisions pas useCallback, une nouvelle instance de la fonction serait créée à chaque rendu de ParentComponent, même si elle n'a pas changé. Cela pourrait entraîner des rendus inutiles du composant CounterButton.
 
-// Avec useCallback, la fonction handleClick est mémorisée et ne changera que si la dépendance spécifiée (count dans cet exemple) change. Cela optimise les performances en évitant la création de nouvelles instances de la fonction à chaque rendu, et en s'assurant que le bouton ne se rend que si la fonction a réellement changé
+// Avec useCallback, la fonction handleClick est mémorisée et ne changera que si la dépendance spécifiée change. Cela optimise les performances en évitant la création de nouvelles instances de la fonction à chaque rendu, et en s'assurant que le bouton ne se rend que si la fonction a réellement changé
 export default App;
 
