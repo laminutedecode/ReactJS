@@ -1,33 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// "dispatch" est associé à la gestion des actions dans le contexte de Redux,et "payload" est généralement la charge utile associée à une action, c'est-à-dire les données que vous souhaitez envoyer avec l'action.
 
+// Supposons que vous ayez une application React avec Redux configuré. Vous pourriez avoir un reducer qui gère l'état d'une liste d'articles dans votre application. Voici à quoi cela pourrait ressembler :
+import './App.css'
+import MyComposant from './components/MyComposant'
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import articleReducer from './reducer/reducer';
 function App() {
-  const [count, setCount] = useState(0)
+
+  // Création du store avec le reducer
+const store = createStore(articleReducer);
+  
 
   return (
     <>
+     <Provider store={store}>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h1>Playload et Dispatch</h1>
+        <MyComposant />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    </Provider>
     </>
   )
 }
