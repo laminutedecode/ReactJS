@@ -4,7 +4,7 @@ import WeatherForm from './weatherForm'
 import WeatherInfos from './weartherInfos'
 import Loader from './loader'
 
-const WEATHERAPI_KEY="api"
+const WEATHERAPI_KEY="37d868e7608845c9ad6103302243001"
 const WEATHERAPI_URL="http://api.weatherapi.com/v1/current.json?aqi?=no"
 
 export default function WeatherApp(){
