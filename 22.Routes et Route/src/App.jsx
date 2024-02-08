@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
+      {/* Les routes, dans un contexte général, font référence aux URL qui permettent d'accéder à différentes pages ou sections d'une application web */}
         {/* The Home route */}
         <Route path="/" element={<Home />} />
 

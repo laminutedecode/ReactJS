@@ -4,6 +4,7 @@ import { addArticle } from '../actions/actions';
 
 const MyComponent = () => {
   const dispatch = useDispatch();
+  // Dispatch : Le "dispatch" est une fonction fournie par le store Redux ou un hook comme useDispatch() fourni par React-Redux, qui est utilisée pour envoyer une action à votre store Redux. L'action est un objet JavaScript qui décrit ce qui s'est passé. Dispatch est utilisé pour envoyer cette action à tous les "reducers" (fonctions qui spécifient comment l'état de l'application doit changer en réponse à une action).
 
   const handleAddArticle = () => {
     const newArticle = {
