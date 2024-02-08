@@ -1,4 +1,4 @@
-// Counter.jsx
+
 import { useReducer } from 'react';
 import counterReducer from '../reducer/countReducer';
 

@@ -13,6 +13,11 @@ const [emojis, setEmojis] = useState(emojiList);
 
 const containerRef = useRef(null);
 
+
+function handleClickOpen(){
+  setIsOpen(!isOpen)
+}
+
 useEffect(() => { // Utilise le hook useEffect pour effectuer une action lors du rendu initial.
   window.addEventListener('click', (e) => { // Ajoute un écouteur d'événement au clic sur la fenêtre.
     if (!containerRef.current.contains(e.target)) { // Vérifie si le clic n'est pas à l'intérieur de containerRef.
@@ -21,12 +26,6 @@ useEffect(() => { // Utilise le hook useEffect pour effectuer une action lors du
     }
   });
 }, []);
-
-
-
-function handleClickOpen(){
-  setIsOpen(!isOpen)
-}
 
 function handleSearch(e) { // Définit une fonction pour gérer la recherche d'emoji.
   e.preventDefault(); // Empêche le comportement par défaut du formulaire.
